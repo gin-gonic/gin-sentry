@@ -13,7 +13,7 @@ func Recovery(client *raven.Client, onlyCrashes bool) gin.HandlerFunc {
 	return func(c *gin.Context) {
 		defer func() {
 			flags := map[string]string{
-				"endpoint": c.Req.RequestURI,
+				"endpoint": c.Request.RequestURI,
 			}
 			if rval := recover(); rval != nil {
 				debug.PrintStack()
