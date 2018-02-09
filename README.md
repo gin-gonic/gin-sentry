@@ -1,6 +1,6 @@
-#Sentry integration in Gin
+# Sentry integration in Gin
 
-##Install it
+## Install it
 
 ```
 go get github.com/gin-gonic/gin-sentry
